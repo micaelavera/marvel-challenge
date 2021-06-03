@@ -1,4 +1,19 @@
 .navbar {
     display: flex;
     justify-content: center;
+    background-color: grey;
+    justify-content: space-between;
+}
+
+.navbar-brand img{
+    width: 5em;
+}
+
+.star {
+    font-size: 2em;
+}
+
+.star-solid {
+    color:yellow;
+    line-height: 1px;
 }
