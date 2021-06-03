@@ -1,4 +1,5 @@
 import React from "react";
+import './Navbar.css';
 // import logo from './images/logo-marvel.png';
 
 const Navbar = () => {
