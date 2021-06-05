@@ -1,15 +1,15 @@
 import React from "react";
 import './Navbar.css';
-import logo from '../images/logo-marvel.png';
+import logo from '../assets/images/logo-marvel.png';
 
 const Navbar = () => {
     return (
         <div className="navbar">
-            <a class="navbar-brand" href="#">
+            <div className="navbar-brand">
                 <img src={logo} alt="logo"/>
-            </a>
-            <input type="search" class="fas" placeholder="&#xf002; Search"/>
-            <i class="star far fa-star"></i>
+            </div>
+            <input type="text" className="input-search form-control fas" placeholder="&#xf002; Search"/>
+            <i className="star far fa-star"></i>
         </div>
     );
 }
