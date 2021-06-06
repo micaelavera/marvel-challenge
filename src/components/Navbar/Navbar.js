@@ -9,7 +9,7 @@ const Navbar = () => {
                 <img src={logo} alt="logo"/>
             </div>
             <input type="text" className="input-search form-control fas" placeholder="&#xf002; Search"/>
-            <i className="favourite far fa-star"></i>
+            <button><i className="favourite far fa-star"></i></button>
         </div>
     );
 }

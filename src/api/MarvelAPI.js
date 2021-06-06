@@ -10,6 +10,7 @@ const MarvelAPI = () => {
             const response = await fetch(`${baseURL}/characters?ts=1&apikey=${publicKey}&hash=${hash}`);
             const json = await response.json();
             const characters = json.data.results;
+            console.log("Total "+ characters.length)
             return characters;
         }catch(error){
             console.log(error);
@@ -27,9 +28,17 @@ const MarvelAPI = () => {
         }
     }
 
+    //Random entre 0 y el lenght de results
     const getNumberRandom = (min, max) => {
         return Math.floor(Math.random() * (max - min)) + min;
     }
+
+    //Name: storm 
+    //id :  1009629
+   // Total de characters de la API: 1493
+    console.log(getCharacters())
+    const number = getNumberRandom(0,1493);
+    console.log(number);
 }
 
 export default MarvelAPI;
