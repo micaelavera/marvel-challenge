@@ -6,7 +6,7 @@ const Home = () => {
     return(
         <div className="header">
             <Navbar/>
-            <MarvelAPI/>
+            {/* <MarvelAPI/> */}
             {/* <Character/> */}
         </div>
     );
