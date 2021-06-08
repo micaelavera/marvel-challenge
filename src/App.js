@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import  React,{useState, useEffect} from 'react';
 import './App.css';
+import Character from './components/Character/Character'
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
-  return (
+
+  const [character, setCharacter] = useState([]);
+ 
+  useEffect(() => {
+       const offset = Math.floor(Math.random() * 1493);
+       const getCharacters = async (offset) => {
+          const response = await fetch(`https://gateway.marvel.com:443/v1/public/characters?limit=1&offset=${offset}&ts=1&apikey=e0b9a1aef53742cc955deb022e25767b&hash=11e78a321dac6fe1b0158f5cf846ece7`);
+          const json = await response.json();
+          const characters = json.data.results; 
+          setCharacter(characters);
+       }
+       getCharacters(offset);
+  },[]);
+
+   return (    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+       <div className="character-container"> 
+       {character.map((element) => ( 
+        <Character 
+          name={element.name}
+          image={`${element.thumbnail.path}.${element.thumbnail.extension}`}
+          key={element.id}/>
+        ))} 
+      </div>
     </div>
   );
 }
