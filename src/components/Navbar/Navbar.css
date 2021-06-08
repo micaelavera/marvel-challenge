@@ -1,14 +1,8 @@
 .navbar {
     display: flex;
-    padding: 20px;
-    justify-content: center;
-    background-color: grey;
-    justify-content: space-between;
-}
-
-.navbar {
-    display : flex;
     flex-wrap: nowrap;
+    padding: 20px;
+    justify-content: space-between;
 }
 
 .navbar-brand img{
@@ -21,6 +15,6 @@
 }
 
 .favourite {
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0px 1em;
 }

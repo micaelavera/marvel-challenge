@@ -1,0 +1,21 @@
+.character {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    margin: 5px;
+}
+
+.character h1 {
+    text-align: center;
+}
+
+.img-character {
+    display: flex;  
+    width: 500px;
+    height: 450px;
+}
+
+.img-character img {
+    width: 100%;
+}
+
