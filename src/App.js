@@ -1,12 +1,14 @@
 import  React,{useState, useEffect} from 'react';
 import './App.css';
+import ListCards from './components/Card/ListCards'
 import Character from './components/Character/Character'
 import Navbar from './components/Navbar/Navbar';
 
 function App() {
 
   const [character, setCharacter] = useState([]);
- 
+  const [cards, setCards] = useState([]);
+
   useEffect(() => {
        const offset = Math.floor(Math.random() * 1493);
        const getCharacters = async (offset) => {
@@ -16,6 +18,15 @@ function App() {
           setCharacter(characters);
        }
        getCharacters(offset);
+
+       const getCards = async () => {
+        const response = await fetch(`https://gateway.marvel.com:443/v1/public/characters?&ts=1&apikey=e0b9a1aef53742cc955deb022e25767b&hash=11e78a321dac6fe1b0158f5cf846ece7`);
+        const json = await response.json();
+        const characters = json.data.results; 
+        setCards(characters);
+     }
+     getCards();
+
   },[]);
 
    return (    
@@ -29,6 +40,7 @@ function App() {
           key={element.id}/>
         ))} 
       </div>
+        <ListCards characters ={cards}/>
     </div>
   );
 }
