@@ -13,7 +13,20 @@
     height: 400px;
     left: 300px;
     top: 100px;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 2em 2em 1fr 1fr;
     background-color:rgb(199, 33, 33); 
     border-radius: 1em;   
+}
+
+.character-title h2 {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.character-description p {
+    padding: 20px;
+    text-align: justify;
+    color:white;
+    font-weight: bold;
 }

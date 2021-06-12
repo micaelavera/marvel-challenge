@@ -5,7 +5,7 @@ const hash = `11e78a321dac6fe1b0158f5cf846ece7`;
 //sacar el limit
 export const getCharacters = async () => {
     try {
-        const response = await fetch(`${baseURL}/characters?limit=1ts=1&apikey=${publicKey}&hash=${hash}`);
+        const response = await fetch(`${baseURL}/characters?ts=1&apikey=${publicKey}&hash=${hash}`);
         const json = await response.json();
         const characters = json.data.results;
         return characters;   
@@ -21,6 +21,17 @@ export const getRandomCharacter = async () => {
         const json = await response.json();
         const random = json.data.results;
         return random;
+    }catch(error){
+        console.log(error);
+    }
+}
+
+export const getComics = async (characterId) => {
+    try {
+        const response = await fetch(`${baseURL}/characters/${characterId}/comics?orderBy=onsaleDate&offset&ts=1&apikey=${publicKey}&hash=${hash}`);
+        const json = await response.json();
+        const comics = json.data.results;
+        return comics;
     }catch(error){
         console.log(error);
     }
