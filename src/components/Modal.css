@@ -1,11 +1,19 @@
 .modal-container {
-    margin: 10px;
-    padding: 20px;
-    display: grid;
-    width: 800px;
     position: absolute;
-    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    margin: 10px;
+    padding: 20px; 
+    display: grid;
+    width: 600px;
+    height: 400px;
+    left: 300px;
+    top: 100px;
     grid-template-rows: 1fr 1fr 1fr;
-    background-color:rgb(199, 33, 33);  
-    border-radius: 1em;  
+    background-color:rgb(199, 33, 33); 
+    border-radius: 1em;   
 }
