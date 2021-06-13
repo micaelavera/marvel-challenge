@@ -1,13 +1,13 @@
 import React from 'react';
 import Comic from './Comic';
 
-const ListComics = ({comics = []}) => {
+const ListComics = ({comic = []}) => {
     return(
         <div className="list-comics">
-            {comics.map(element => (
+            {comic.map(comic => (
                 <Comic
-                    comic = {element}
-                    key = {element.id}
+                    comic = {comic}
+                    key = {comic.id}
                 />
             ))}
         </div>

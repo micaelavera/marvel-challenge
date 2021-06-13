@@ -16,6 +16,7 @@ const Modal = ({character, show, close}) => {
             const response = await fetch(`https://gateway.marvel.com:443/v1/public/characters/${character.id}/comics?&ts=1&apikey=e0b9a1aef53742cc955deb022e25767b&hash=11e78a321dac6fe1b0158f5cf846ece7`);
             const json = await response.json();
             const comics = json.data.results;
+            console.log(comics);
             setComic(comics);
         }
         getComics();    
@@ -55,9 +56,12 @@ const Modal = ({character, show, close}) => {
                     <p>{character.description}</p>
                 </div>
                 <div className="character-comics">
-                {comic.map((element)=> (
-                    <h1>{element.title}</h1>
-                ))}
+                     <ListComics comic = {comic}/> 
+
+                {/* {comic.map((element)=> (
+
+                    <img src={`${element.thumbnail.path}.${element.thumbnail.extension}`} ))}
+                    */}              
                     {/* <ListComics comic = {comic}/> */}
                 </div>
             </div>

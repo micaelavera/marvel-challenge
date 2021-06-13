@@ -1,9 +1,14 @@
 import React from 'react';
 
-const Comic = ({element}) => {
+const Comic = ({comic}) => {
     return (
-        <div className="img-comic">
-            <h1>{element.title}</h1>
+        <div className="comic">
+            <div className="title-comic">
+                 <h3>{comic.title}</h3> 
+            </div>
+            <div className="img-comic">
+             <img src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`} alt="comic"/>
+            </div>
         </div>
     );
 }
