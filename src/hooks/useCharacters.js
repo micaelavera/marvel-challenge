@@ -1,5 +1,5 @@
-import {useState,useEffect} from 'react';
-import {getCharacters} from '../api/MarvelAPI';
+import { useState, useEffect } from 'react';
+import { getCharacters } from '../api/MarvelAPI';
 
 const useCharacters = () => {
     
@@ -9,6 +9,7 @@ const useCharacters = () => {
     useEffect(() => {
         getCharacters()
           .then((character) => {
+            console.log(character);
             setCharacters(character); 
           })
           .finally(() => setIsLoading(false));

@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import { getComics } from '../api/MarvelAPI'
 
 const useComics = (id) => {
@@ -13,7 +13,7 @@ const useComics = (id) => {
             setComics(comic); 
           })
           .finally(() => setIsLoading(false));
-      }, []);
+      }, [id]);
 
       return [comics, isLoading];
     };

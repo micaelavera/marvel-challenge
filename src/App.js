@@ -17,7 +17,7 @@ function App() {
     <Router>
       <Navbar/>
       {/* {isLoadingCharacter ? <div>Loading...</div> : <ListRandomCharacter randomCharacter = {randomCharacter}/>}  */}
-       {isLoading ? <div>Loading...</div> : <ListCards characters = {characters}/>}
+      {isLoading ? <div>Loading...</div> : <ListCards characters = {characters}/>}
     </Router>
     </div>
   );

@@ -1,10 +1,11 @@
 import React from 'react';
 import Comic from './Comic';
 
-const ListComics = ({comic = []}) => {
+const ListComics = ({comics = []}) => {
+    
     return(
         <div className="list-comics">
-            {comic.map(comic => (
+            {comics.map(comic => (
                 <Comic
                     comic = {comic}
                     key = {comic.id}

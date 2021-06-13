@@ -1,8 +1,8 @@
 .modal-container {
     position: absolute;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .modal {
@@ -22,11 +22,18 @@
     color: black;
     font-weight: bold;
     text-align: center;
+    background-color: grey;
 }
 
 .character-description p {
-    padding: 20px;
     text-align: justify;
     color:white;
     font-weight: bold;
+    background-color: blue;
+}
+
+.modal .close i {
+    font-size: 35px;
+    top: 20px;
+    right: 10px;
 }

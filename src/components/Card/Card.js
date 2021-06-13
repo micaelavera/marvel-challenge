@@ -1,7 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import Modal from '../Modal';
-//import useComics from "../../hooks/useComics";
-
+import React, {useState} from 'react';
+import Modal from '../Modal/Modal'
 import './Card.css';
 
 const Card = ({character}) => {
