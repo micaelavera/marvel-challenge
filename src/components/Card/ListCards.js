@@ -17,7 +17,7 @@ const ListCards = ({ characters = [] }) => {
     return(
         <div className="container-characters">
             {characters.map(element => (
-                <Link to={`/character/${element.id}`} styles={{textDecoration:'none'}}>
+                <Link to={`/character/${element.id}`}>
                     <Card 
                         character = {element}
                         key = {element.id}

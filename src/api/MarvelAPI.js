@@ -2,7 +2,6 @@ const baseURL = `https://gateway.marvel.com:443/v1/public/`;
 const publicKey = `e0b9a1aef53742cc955deb022e25767b`;
 const hash = `11e78a321dac6fe1b0158f5cf846ece7`;
 
-//sacar el limit
 export const getCharacters = async () => {
     try {
         const response = await fetch(`${baseURL}/characters?ts=1&apikey=${publicKey}&hash=${hash}`);
@@ -26,9 +25,9 @@ export const getRandomCharacter = async () => {
     }
 }
 
-export const getComics = async (characterId) => {
+export const getComics = async(characterId) => {
     try {
-        const response = await fetch(`${baseURL}/characters/${characterId}/comics?orderBy=onsaleDate&offset&ts=1&apikey=${publicKey}&hash=${hash}`);
+        const response = await fetch(`${baseURL}/characters/${characterId}/comics?ts=1&apikey=${publicKey}&hash=${hash}`);
         const json = await response.json();
         const comics = json.data.results;
         return comics;

@@ -1,5 +1,5 @@
 import {useState,useEffect} from 'react';
-import {getCharacters} from '../api/MarvelAPI.js';
+import {getCharacters} from '../api/MarvelAPI';
 
 const useCharacters = () => {
     
