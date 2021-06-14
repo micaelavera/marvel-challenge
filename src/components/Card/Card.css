@@ -2,6 +2,8 @@
     width: 300px;
     height: 400px;
     position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(0,0,0, 0.4); 
 }
 
 .img-character {
@@ -28,6 +30,7 @@
 
 .favourites i{
     position: absolute;
+    color: black;
     font-size: 20px;
     right: 1em;
     top: 1em;

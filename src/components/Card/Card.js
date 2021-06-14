@@ -1,9 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Modal from '../Modal/Modal';
 import './Card.css';
 
 const Card = ({character}) => {
+
+    const[modal, setModal] = useState(false);
+
+    const toggleModal = () => {
+        setModal(!modal);
+    }
+
     return(
-        <div className="card-container">
+        <div className="card-container" onClick={() => toggleModal()}>
             <div className="favourites">
                 <i className="far fa-star"></i>
             </div>
@@ -13,6 +21,7 @@ const Card = ({character}) => {
             <div className="name-character">
                 <h2>{character.name}</h2>
             </div>
+            <Modal character={character} show={modal} close={toggleModal}/>
         </div>
     );
 }

@@ -3,13 +3,14 @@ import Card from "./Card";
 import './ListCards.css';
 
 const ListCards = ({ characters = [] }) => {
+
     return(
         <div className="container-characters">
-            {characters.map(element => (
-                <Card 
-                    character = {element}
-                    key = {element.id}
-                />
+            {characters.map((character) => (
+                    <Card 
+                        character = {character}
+                        key = {character.id}
+                    />
             ))}
         </div>
         );

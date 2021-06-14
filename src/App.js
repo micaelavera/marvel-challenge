@@ -1,22 +1,27 @@
 import  React from 'react';
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import ListCards from './components/Card/ListCards'
-//import ListRandomCharacter from './components/Character/ListRandomCharacter';
-import useCharacters from "./hooks/useCharacters";
-//import useRandomCharacter from './hooks/useRandomCharacter';
+import Home from './pages/Home';
+import { CharacterContextProvider } from './contexts/CharacterContext';
+import { RandomCharacterContextProvider } from './contexts/RandomCharacterContext';
 
 function App() {
 
-//const [randomCharacter, isLoadingCharacter] = useRandomCharacter();
-  const [characters, isLoading] = useCharacters();
-    
    return (    
-    <div className="App">
-      <Navbar/>
-      {/* {isLoadingCharacter ? <div>Loading...</div> : <ListRandomCharacter randomCharacter = {randomCharacter}/>}  */}
-       {isLoading ? <div>Loading...</div> : <ListCards characters = {characters}/>}
-    </div>
+      <CharacterContextProvider> 
+         <div className="App">
+            <Router>
+               <Switch>
+                   <RandomCharacterContextProvider>
+                     <Route exact path="/" component={Home}/>
+                  </RandomCharacterContextProvider>
+
+      {/*  {isLoadingCharacter ? <div>Loading...</div> : <ListRandomCharacter randomCharacter = {randomCharacter}/>} */}
+      {/* </div>{isLoading ? <div>Loading...</div> : <ListCards characters = {characters}/>}   */}
+               </Switch>
+            </Router>
+         </div>
+      </CharacterContextProvider>
   );
 }
 
