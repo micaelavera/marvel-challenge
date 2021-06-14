@@ -9,7 +9,6 @@ const useCharacters = () => {
     useEffect(() => {
         getCharacters()
           .then((character) => {
-            console.log(character);
             setCharacters(character); 
           })
           .finally(() => setIsLoading(false));

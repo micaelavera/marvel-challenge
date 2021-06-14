@@ -9,7 +9,6 @@ export const getCharacters = async () => {
     try {
         const response = await fetch(`${baseURL}/characters?ts=1&apikey=${publicKey}&hash=${hash}`);
         const json = await response.json();
-        console.log(json);
         const characters = json.data.results;
         return characters;   
     }catch(error){
@@ -31,7 +30,7 @@ export const getRandomCharacter = async () => {
 
 export const getComics = async(characterId) => {
     try {
-        const response = await fetch(`${baseURL}/characters/${characterId}/comics?ts=1&apikey=${publicKey}&hash=${hash}`);
+        const response = await fetch(`${baseURL}/characters/${characterId}/comics?orderBy=onsaleDate&ts=1&apikey=${publicKey}&hash=${hash}`);
         const json = await response.json();
         const comics = json.data.results;
         return comics;

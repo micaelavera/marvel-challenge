@@ -9,7 +9,6 @@ const useComics = (id) => {
     useEffect(() => {
         getComics(id)
           .then((comic) => {
-            console.log(comic);
             setComics(comic); 
           })
           .finally(() => setIsLoading(false));
