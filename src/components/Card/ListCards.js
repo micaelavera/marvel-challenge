@@ -7,13 +7,13 @@ const ListCards = ({ characters = [] }) => {
 
     return(
         <div className="container-characters">
-            {characters.map(character => (
-                <Link to={`/character/${character.id}`}>
+            {characters.map((character) => (
+                //<Link to={`/character/${character.id}`}>
                     <Card 
                         character = {character}
                         key = {character.id}
                     />
-                </Link>
+              //  </Link>
             ))}
             {/* <button onClick={() => toggleModal()}> CLICK ME</button>
             <Modal show={modal} close={toggleModal}/> */}

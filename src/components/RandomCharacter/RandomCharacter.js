@@ -1,5 +1,5 @@
 import React from 'react';
-import './Character.css';
+import './RandomCharacter.css';
 
 const Character = ({name, image}) => {
     return (

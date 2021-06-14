@@ -1,20 +1,24 @@
-import { useState, useEffect } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import { getCharacters } from '../api/MarvelAPI';
+import  CharacterContext from '../contexts/CharacterContext';
 
 const useCharacters = () => {
-    
-    const [characters, setCharacters] = useState([]);
+  
+    const {characters, setCharacters} = useContext(CharacterContext);
+
+    //const [characters, setCharacters] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         getCharacters()
           .then((character) => {
+            console.log(character);
             setCharacters(character); 
           })
           .finally(() => setIsLoading(false));
-      }, []); 
+      }, [setCharacters]); 
     
-      return [characters, isLoading];
+      return {characters, isLoading};
     };
 
 export default useCharacters;

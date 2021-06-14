@@ -28,6 +28,7 @@
 
 .favourites i{
     position: absolute;
+    color: black;
     font-size: 20px;
     right: 1em;
     top: 1em;
