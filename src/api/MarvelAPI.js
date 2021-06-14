@@ -10,7 +10,6 @@ export const getCharacters = async () => {
         const response = await fetch(`${baseURL}/characters?ts=1&apikey=${publicKey}&hash=${hash}`);
         const json = await response.json();
         const characters = json.data.results;
-        console.log(characters);
         return characters;   
     }catch(error){
         console.log(error);
