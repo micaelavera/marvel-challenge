@@ -5,7 +5,7 @@ Esta aplicación consume los datos de los personajes de la [API oficial de Marve
 ## Demo
 **Link:** https://marvel-searcher-app.herokuapp.com/
 ## Tecnologías y herramientas utilizadas
-- [React JS](https://es.reactjs.org/)
+- [ReactJS](https://es.reactjs.org/)
 - [React Hooks](https://es.reactjs.org/docs/hooks-intro.html)
 - [React Router](https://reactrouter.com/)
 - [Context API](https://es.reactjs.org/docs/context.html)
