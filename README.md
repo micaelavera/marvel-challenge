@@ -36,7 +36,7 @@ Las siguientes features no fueron implementadas por falta de tiempo.
 ![image](https://user-images.githubusercontent.com/28459482/122105045-b5be7300-cdee-11eb-8762-12ad89bc3920.png)
 
 ### Cards
-![image](https://user-images.githubusercontent.com/28459482122105790-9116cb00-cdef-11eb-8f96-6c662777cdff.png)
+![image](https://user-images.githubusercontent.com/28459482/122105790-9116cb00-cdef-11eb-8f96-6c662777cdff.png)
 
 ### Descripción y Comics
 ![image](https://user-images.githubusercontent.com/28459482/122106845-cc65c980-cdf0-11eb-941d-cc6233eddf97.png)  
