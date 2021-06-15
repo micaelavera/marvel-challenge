@@ -1,7 +1,9 @@
 .container-characters {
-    margin: 20px;
+    margin: 0px 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 20px;
     justify-content: center;
+    align-items: center;
+    --auto-grid-min-size: 18rem;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 1em;
 }
