@@ -3,7 +3,7 @@
 Buscador de personajes de Marvel realizado en ReactJS durante el Bootcamp de LenioLabs.
 Esta aplicación consume los datos de los personajes de la [API oficial de Marvel](https://developer.marvel.com/).
 ## Demo
-**Link:** https://marvel-searcher-app.herokuapp.com/
+**Link:** https://marvel-searcher-app.herokuapp.com
 ## Tecnologías y herramientas utilizadas
 - [ReactJS](https://es.reactjs.org/)
 - [React Hooks](https://es.reactjs.org/docs/hooks-intro.html)
