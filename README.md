@@ -41,12 +41,12 @@ $ cd marvel-react-challenge
 
 Instalar las dependencias:
 ```
-$ npm install`
+$ npm install
 ```
 
 Ejecutar el proyecto:
 ```
-$ npm start`
+$ npm start
 ```
 ## Autor
 [Micaela Vera](https://github.com/micaelavera)
