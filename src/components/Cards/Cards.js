@@ -13,7 +13,7 @@ import Loading from '../Loading/Loading';
      return(
             <>
             <div className="cards">
-               {isLoading ? <Loading name={"Searching day's character"}/> : <ListRandomCharacter randomCharacter = {randomCharacter}/> }
+               {isLoading ? <Loading name={"Searching the character of the day"}/> : <ListRandomCharacter randomCharacter = {randomCharacter}/> }
                {isLoadingCharacter ? <Loading name={'Searching characters'}/> : <ListCards characters = {characters}/>}
             </div>
             </>
