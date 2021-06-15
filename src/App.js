@@ -15,9 +15,6 @@ function App() {
                    <RandomCharacterContextProvider>
                      <Route exact path="/" component={Home}/>
                   </RandomCharacterContextProvider>
-
-      {/*  {isLoadingCharacter ? <div>Loading...</div> : <ListRandomCharacter randomCharacter = {randomCharacter}/>} */}
-      {/* </div>{isLoading ? <div>Loading...</div> : <ListCards characters = {characters}/>}   */}
                </Switch>
             </Router>
          </div>

@@ -1,15 +1,17 @@
 # Marvel Searcher
-Buscador de personajes de Marvel realizado en el Bootcamp de LenioLabs.
-
+## Descripción
+Buscador de personajes de Marvel realizado en ReactJS durante el Bootcamp de LenioLabs.
+Esta aplicación consume los datos de los personajes de la [API oficial de Marvel](https://developer.marvel.com/).
 ## Demo
 **Link:** https://marvel-searcher-app.herokuapp.com/
 ## Tecnologías y herramientas utilizadas
 - [React JS](https://es.reactjs.org/)
 - [React Hooks](https://es.reactjs.org/docs/hooks-intro.html)
 - [React Router](https://reactrouter.com/)
-- [Context](https://es.reactjs.org/docs/context.html)
+- [Context API](https://es.reactjs.org/docs/context.html)
 - [Bootstrap](https://getbootstrap.com/)
-
+- [Trello](https://trello.com/b/RBZt7IE4/marvel-react-challenge)
+- [Heroku](https://www.heroku.com/)
 ### Marvel API
 https://developer.marvel.com/
 ## Funcionalidades
@@ -18,7 +20,7 @@ https://developer.marvel.com/
 
 - Al clickear sobre una card se debe mostrar un modal con el detalle del personaje y un listado de sus cómics ordenados por fecha. 
 ### Funcionalidades a implementar
-Las siguientes features no fueron implementadas por falta de tiempo.
+Las siguientes features no fueron implementadas por falta de tiempo:
 
 - El buscador tiene que tener la posibilidad de buscar los nombres de los personajes de Marvel en el input pero también por URL.
 
