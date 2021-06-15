@@ -1,12 +1,14 @@
 import React from 'react';
-import Cards from '../components/Cards';
+import Cards from '../components/Cards/Cards';
 import Navbar from '../components/Navbar/Navbar';
+import Footer from '../components/Footer/Footer';
 
 const Home = () => {
          return(
              <>
                <Navbar/>
                <Cards/>
+               <Footer/>
              </>
         );
 }

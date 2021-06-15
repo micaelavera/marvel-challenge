@@ -5,7 +5,7 @@ import  CharacterContext from '../contexts/CharacterContext';
 const useCharacters = () => {
   
     const {characters, setCharacters} = useContext(CharacterContext);
-    const [isLoading, setIsLoading] = useState(true);
+    const [isLoadingCharacter, setIsLoading] = useState(true);
 
     useEffect(() => {
         getCharacters()
@@ -15,7 +15,7 @@ const useCharacters = () => {
           .finally(() => setIsLoading(false));
       }, [setCharacters]); 
     
-      return {characters, isLoading};
+      return {characters, isLoadingCharacter};
     };
 
 export default useCharacters;
