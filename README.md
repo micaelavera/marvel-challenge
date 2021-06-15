@@ -30,8 +30,10 @@ Las siguientes features no fueron implementadas por falta de tiempo.
 - La búsqueda tiene que poder guardarse en un listado de favoritos y que persista en el browser para que pueda ser usada en un futuro solo dandole click a la lista de búsquedas favoritas el cual tiene la estrella en la esquina superior derecha del input de búsqueda.
 
 ## Screenshots
-
-
+![image](https://user-images.githubusercontent.com/28459482/122104849-7d1e9980-cdee-11eb-9d22-c759aa38df3c.png)
+![image](https://user-images.githubusercontent.com/28459482/122105045-b5be7300-cdee-11eb-8762-12ad89bc3920.png)
+![image](https://user-images.githubusercontent.com/28459482/122105790-9116cb00-cdef-11eb-8f96-6c662777cdff.png)
+![image](https://user-images.githubusercontent.com/28459482/122106068-d6d39380-cdef-11eb-84d9-f4fc9154ecb3.png)
 ## Instalación
 Clonar el repositorio:
 ```
