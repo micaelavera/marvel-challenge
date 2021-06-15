@@ -4,10 +4,11 @@ Buscador de personajes de Marvel realizado en el Bootcamp de LenioLabs.
 ## Demo
 **Link:** 
 ## Tecnologías y herramientas utilizadas
-- React JS
-- React Hooks
-- Context API
-- Bootstrap
+- [React JS](https://es.reactjs.org/)
+- [React Hooks](https://es.reactjs.org/docs/hooks-intro.html)
+- [React Router](https://reactrouter.com/)
+- [Context](https://es.reactjs.org/docs/context.html)
+- [Bootstrap](https://getbootstrap.com/)
 
 ### Marvel API
 https://developer.marvel.com/
@@ -33,8 +34,10 @@ Las siguientes features no fueron implementadas por falta de tiempo.
 
 ## Instalación
 Clonar el repositorio:
-`$ git clone https://github.com/micaelavera/marvel-react-challenge.git`
+```
+$ git clone https://github.com/micaelavera/marvel-react-challenge.gi
 `$ cd marvel-react-challenge`
+```
 
 Instalar las dependencias:
 `$ npm install`
