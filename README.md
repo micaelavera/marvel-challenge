@@ -40,7 +40,7 @@ Las siguientes features no fueron implementadas por falta de tiempo:
 ### Cards
 ![image](https://user-images.githubusercontent.com/28459482/122105790-9116cb00-cdef-11eb-8f96-6c662777cdff.png)
 
-### Descripción y Comics
+### Descripción y Cómics
 ![image](https://user-images.githubusercontent.com/28459482/122106845-cc65c980-cdf0-11eb-941d-cc6233eddf97.png)  
 
 ![image](https://user-images.githubusercontent.com/28459482/122106068-d6d39380-cdef-11eb-84d9-f4fc9154ecb3.png) 
