@@ -6,9 +6,9 @@ import useRandomCharacter from '../../hooks/useRandomCharacter';
 import Loading from '../Loading/Loading';
     
     const Cards = () => {
-    
-        const { isLoadingCharacter , characters } = useCharacters();
+        
         const { isLoading , randomCharacter } = useRandomCharacter();
+        const { isLoadingCharacter , characters } = useCharacters('');
 
      return(
             <>
